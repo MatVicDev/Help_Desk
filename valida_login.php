@@ -20,6 +20,7 @@ foreach($usuarios as $user) {
 if($autenticado) {
 
 	$_SESSION['autenticado'] = 'SIM';
+	header('Location: home.php');
 }
 else {
 
