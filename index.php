@@ -33,10 +33,18 @@
                 <div class="form-group">
                   <input name="senha" type="password" class="form-control" placeholder="Senha">
                 </div>
-                <?php if(isset($_GET) && $_GET['erro'] == 'autenticacao') { ?>
+                <?php if(isset($_GET['erro']) && $_GET['erro'] == 'autenticacao') { ?>
 
                   <div class="text-danger">
                     <small>Usuário e/ou senha inválidos!</small>
+                  </div>
+
+                <?php } ?>
+
+                <?php if(isset($_GET['erro']) && $_GET['erro'] == 'permissao') { ?>
+
+                  <div class="text-danger">
+                    <small>Você não possui permissão para acessar essa página!</small>
                   </div>
 
                 <?php } ?>

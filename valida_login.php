@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 $autenticado = false;
 
 $usuarios = [
@@ -15,9 +17,14 @@ foreach($usuarios as $user) {
 	} 
 }
 
-if($autenticado)
-	echo "Usuário autenticado!";
-else
+if($autenticado) {
+
+	$_SESSION['autenticado'] = 'SIM';
+}
+else {
+
+	$_SESSION['autenticado'] = 'NAO';
 	header('Location: index.php?erro=autenticacao');
+}
 
 ?>
