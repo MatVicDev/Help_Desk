@@ -1,2 +1,2 @@
-Notebook não liga#Hardware#Notebook com problema na fonte.
-Impressora não imprime#Impressora#Impressora com problema no cartucho.
+4#Notebook não liga#Hardware#Notebook com problema na fonte.
+3#Impressora não imprime#Impressora#Impressora com problema no cartucho.
